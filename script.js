@@ -20,13 +20,12 @@ searchInput.addEventListener("input", e => {
     .then(response => response.json())
     .then((data) =>{
         console.log(data[0])
-        const nameOfficial = data[0].name.official
-        console.log(nameOfficial)
+        //const nameOfficial = data[0].name.official
         const nameCommon = data[0].name.common
         const flag = data[0].flags.png
         const alt = data[0].flags.alt
         const capital = data[0].capital
-        const region = data[0].region
+        const region = data[0].subregion
         const population = data[0].population
 
         const isVisible = nameCommon.toLowerCase().includes(value) 
@@ -44,7 +43,7 @@ searchInput.addEventListener("input", e => {
         textElem.classList.add('text-container')
         
         const nameElement = document.createElement('h2');
-        nameElement.innerText = `${nameOfficial}`;
+        nameElement.innerText = `${nameCommon}`;
         textElem.appendChild(nameElement);
     
         const populationElem = document.createElement('p');
