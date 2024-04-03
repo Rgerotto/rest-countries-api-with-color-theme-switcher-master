@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0;
+}
+.container{
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    height: 300px;
+    width: 200px;
+    background-color: rgba(23, 8, 134, 0.688);
+}
+.image{
+    height: 130px;
+}
+img{
+    height: 100px;
+    width: 100%;
+}
+.text-container{
+    padding: 0 20px;
+}
+h2{
+    font-size: 19px;
+    text-align: center;
+}
+.name{
+    color: white;
+}
+.hide{
+    display: none;
+}
